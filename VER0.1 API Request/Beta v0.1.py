@@ -1,16 +1,13 @@
 import json
 import requests
 
-API_URL = "https://opentdb.com/api.php?amount=10"
+user_selections = { 
+    "ammount": 10,
+    "type": "multiple"
+}
 
-response = requests.get(API_URL)
-api_data = json.loads(response.text)
+response = requests.get(url="https://opentdb.com/api.php",params=user_selections)
+question_data = questions.json()["results"]
 
-user_questions = api_data["results"]
 
-correct_answers = 0
-for question in user_questions:
-    print(question["question"])
-    print("Options:")
 
-    
