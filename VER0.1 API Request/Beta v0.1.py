@@ -7,7 +7,7 @@ user_selections = {
 }
 
 response = requests.get(url="https://opentdb.com/api.php",params=user_selections)
-question_data = questions.json()["results"]
+print("response")
 
 
 
