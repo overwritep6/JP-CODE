@@ -27,7 +27,6 @@ def how_many_playing():
 
 def question_asker():
 
-    
     for question in user_questions:
         print(html.unescape(question["question"]))
         print(html.unescape("Options:"))
