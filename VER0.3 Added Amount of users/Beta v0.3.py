@@ -2,10 +2,13 @@ import requests
 import json 
 import html
 
+#username array
 usernames = []
 
+#amount of questions
 Amount_questions = 10
 
+#Gets the Api questions and puts it into questions json file
 url = "https://opentdb.com/api.php?amount=10"
 response = requests.get((url)+str(Amount_questions))
 api_data = json.loads(response.text)
@@ -25,6 +28,7 @@ def how_many_playing():
     for number in range(int(user_amount)):
         asking_thing()
 
+#question asking fuction
 def question_asker():
 
     
