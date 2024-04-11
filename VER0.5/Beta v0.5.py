@@ -1,8 +1,8 @@
+from os import system, name
 from time import sleep
 import requests
 import json 
 import html
-import os
 
 
 usernames = []
