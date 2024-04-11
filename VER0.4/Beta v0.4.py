@@ -1,61 +1,68 @@
 import requests
 import json 
-import os
-import time 
- 
- 
-def make_file():
-    user_questions = open('questions.json','w')
-    user_questions.write(json.dumps(response, ensure_ascii=False, indent = 4))
-    Amount_questions = 10
-    res = requests.get('https://opentdb.com/api.php?amount='+str(Amount_questions))
-    response = json.loads(res.text)
-    return response
+import html
 
-def question_thingy (response):
+usernames = []
 
-    data = json.loads(open('questions.json','r').read()) 
-    for items in data['results']:
-        print(items['type']) 
-        print(items['difficulty']) 
-        print(items['category']) 
-        print(items['question']) 
-        print(items['correct_answer']) 
-        for awnsers in items['incorrect_answers']:
-            print('Could not find any questions')
-            question_thingy(response)
+Amount_questions = 10
+
+url = "https://opentdb.com/api.php?amount=10"
+response = requests.get((url)+str(Amount_questions))
+api_data = json.loads(response.text)
+make_json = open('questions.json','w')
+user_questions = api_data['results']
+
+#def make_file():
+    #user_questions = open('questions.json','w')
+    #user_questions.write(json.dumps(api_data, ensure_ascii=False, indent = 4))
+
+def how_many_playing():
+    user_amount = int(input('how many users are playing: '))
+    #user_amount -=1
+    def asking_thing():
+        username = input('what your name: ')
+        usernames.append([username,0,0])
+    for number in range(int(user_amount)):
+        asking_thing()
+
+def question_asker():
+
     
-def main_menu():
-    menu = {}
-    menu['1']='Add user'
-    menu['2']='Delete User'
-    menu['3']='Start Quiz'
-    menu['4']='End Quiz'
-    print('Use Intagers To Navigate Around The Menus')
-    time.sleep(5)
-    os.system('cls')    
-    while True:
-        options=menu.keys()
-        sorted(options)
-        for entry in options:
-            print (menu[entry])
-
-        selection=input('Please Select:')
-        if selection =='1':
-            print('1:Add user')
-        elif selection == '2':
-            print('2:Delete User')
-        elif selection == '3':
-            print('3:Starting Quiz')
-            question_thingy(response)        
-        elif selection == '4':
-            print('4:End Quiz')      
+    for question in user_questions:
+        print(html.unescape(question["question"]))
+        print(html.unescape("Options:"))
+        for i in range(len(question["incorrect_answers"])):
+            print(html.unescape(f"{i+1}. {question['incorrect_answers'][i]}"))
+        print(html.unescape(f"{len(question['incorrect_answers'])+1}. {question['correct_answer']}"))
+        user_answer = int(input("Enter the number of your answer: "))
+        if user_answer == len(question["incorrect_answers"]) + 1:
+            print("Correct!")
         else:
-            print("you are gay select something correct")  
+            print("Incorrect.") 
 
 
-main_menu()
+
+
+#def question_sorter(api_data):
+    #data = json.loads(open('questions.json','r').read()) 
+    data = api_data
+    try:
+        for items in data['results']:
+            print(items['type']) 
+            print(items['difficulty']) 
+            print(items['category']) 
+            print(items['question']) 
+            print(items['correct_answer']) 
+            for items in items['incorrrect_answers']:
+                print('Could not find any questions')
+                question_sorter(api_data)
+    except:
+        print('except fired')
     
+
+#make_file()
+question_asker()
+print()
 
 
 

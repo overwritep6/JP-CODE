@@ -3,93 +3,33 @@
     "results": [
         {
             "type": "multiple",
-            "difficulty": "easy",
-            "category": "Entertainment: Video Games",
-            "question": "In the game &quot;Overwatch,&quot; what are the names of the two Australian criminals from the Junkers faction?",
-            "correct_answer": "Junkrat and Roadhog",
-            "incorrect_answers": [
-                "Roadrat and Junkhog",
-                "Ana and Pharah",
-                "McCree and Deadeye"
-            ]
-        },
-        {
-            "type": "multiple",
-            "difficulty": "medium",
-            "category": "Entertainment: Video Games",
-            "question": "When was the video game publisher &quot;Ubisoft&quot; founded ?",
-            "correct_answer": "March 1986",
-            "incorrect_answers": [
-                "April 1990",
-                "June 2001",
-                "August 1956"
-            ]
-        },
-        {
-            "type": "multiple",
             "difficulty": "hard",
-            "category": "Sports",
-            "question": "What is the full name of the footballer &quot;Cristiano Ronaldo&quot;?",
-            "correct_answer": "Cristiano Ronaldo dos Santos Aveiro",
+            "category": "Entertainment: Music",
+            "question": "&quot;All the Boys&quot; by Panic! At the Disco was released as a bonus track on what album?",
+            "correct_answer": "Too Weird To Live, Too Rare To Die!",
             "incorrect_answers": [
-                "Cristiano Ronaldo los Santos Diego",
-                "Cristiano Armando Diego Ronaldo",
-                "Cristiano Luis Armando Ronaldo"
-            ]
-        },
-        {
-            "type": "multiple",
-            "difficulty": "medium",
-            "category": "Entertainment: Film",
-            "question": "Which one of these action movies are shot entirely in one take?",
-            "correct_answer": "Victoria",
-            "incorrect_answers": [
-                "Ip Man 2",
-                "The Bourne Legacy",
-                "L&eacute;on: The Professional"
-            ]
-        },
-        {
-            "type": "multiple",
-            "difficulty": "hard",
-            "category": "History",
-            "question": "During the Spanish Civil War (1936), Francisco Franco fought for which political faction?",
-            "correct_answer": "Nationalist Spain",
-            "incorrect_answers": [
-                "Republican Spain",
-                "Popular Front",
-                "Papal State"
+                "A Fever You Can&#039;t Sweat Out",
+                "Death Of A Bachelor",
+                "Vices &amp; Virtues"
             ]
         },
         {
             "type": "multiple",
             "difficulty": "easy",
             "category": "Entertainment: Video Games",
-            "question": "Which Greek letter represents the &quot;Half-Life&quot; logo?",
-            "correct_answer": "Lambda",
+            "question": "Which of the following is not a faction in Tom Clancy&#039;s The Division?",
+            "correct_answer": "CDC",
             "incorrect_answers": [
-                "Omega",
-                "Alpha",
-                "Sigma"
-            ]
-        },
-        {
-            "type": "multiple",
-            "difficulty": "medium",
-            "category": "Entertainment: Japanese Anime &amp; Manga",
-            "question": "Which animation studio animated the 2016 anime &quot;Mob Psycho 100&quot;?",
-            "correct_answer": "Bones",
-            "incorrect_answers": [
-                "A-1 Pictures",
-                "Shaft",
-                "Madhouse"
+                "Cleaners",
+                "Last Man Batallion",
+                "Rikers"
             ]
         },
         {
             "type": "boolean",
             "difficulty": "easy",
-            "category": "Science: Computers",
-            "question": "The Windows ME operating system was released in the year 2000.",
+            "category": "Animals",
+            "question": "Rabbits can&#039;t vomit.",
             "correct_answer": "True",
             "incorrect_answers": [
                 "False"
@@ -98,23 +38,83 @@
         {
             "type": "multiple",
             "difficulty": "hard",
-            "category": "Entertainment: Television",
-            "question": "In Star Trek, what is the name of Spock&#039;s father?",
-            "correct_answer": "Sarek",
+            "category": "Entertainment: Video Games",
+            "question": "In the game Call of Duty, what is the last level where you play as an American soldier?",
+            "correct_answer": "Festung Recogne",
             "incorrect_answers": [
-                "Tuvok",
-                "T&#039;Pal",
-                "Surak"
+                "Ste. Mere-Eglise (Day)",
+                "Chateau",
+                "Brecourt"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Entertainment: Japanese Anime &amp; Manga",
+            "question": "In the &quot;Re:Zero&quot; manga series, which of the following Sin Archbishops eats Rem&#039;s existence?",
+            "correct_answer": "Ley Batenkaitos",
+            "incorrect_answers": [
+                "Roy Alphard",
+                "Petelgeuse Romanee-Conti",
+                "Louis Arneb"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Entertainment: Video Games",
+            "question": "What was the main currency in Club Penguin?",
+            "correct_answer": "Coins",
+            "incorrect_answers": [
+                "Stamps",
+                "Tickets",
+                "Gems"
             ]
         },
         {
             "type": "boolean",
             "difficulty": "easy",
-            "category": "Entertainment: Music",
-            "question": "Michael Jackson wrote The Simpsons song &quot;Do the Bartman&quot;.",
-            "correct_answer": "False",
+            "category": "Entertainment: Video Games",
+            "question": "In &quot;Super Mario 3D World&quot;, the Double Cherry power-up originated from a developer accidentally making two characters controllable.",
+            "correct_answer": "True",
             "incorrect_answers": [
-                "True"
+                "False"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Entertainment: Video Games",
+            "question": "In which game did the character &quot;Mario&quot; make his first appearance?",
+            "correct_answer": "Donkey Kong",
+            "incorrect_answers": [
+                "Super Mario Bros.",
+                "Super Mario Land",
+                "Mario Bros."
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "medium",
+            "category": "Vehicles",
+            "question": "Which supercar company is from Sweden?",
+            "correct_answer": "Koenigsegg",
+            "incorrect_answers": [
+                "Bugatti",
+                "Lamborghini",
+                "McLaren"
+            ]
+        },
+        {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Science: Computers",
+            "question": "What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?",
+            "correct_answer": "Transport",
+            "incorrect_answers": [
+                "Session",
+                "Data link",
+                "Network"
             ]
         }
     ]
